@@ -1,0 +1,35 @@
+{
+  "name": "Browserstack Toolbar Toggle",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Toggles the toolbar in Browserstack Live and App-Live",
+  "action": {
+    "default_icon": {
+      "16": "/images/browserstack_16.png",
+      "24": "/images/browserstack_24.png",
+      "32": "/images/browserstack_32.png",
+      "48": "/images/browserstack_48.png",
+      "128": "/images/browserstack_128.png"
+    },
+    "default_title": "Browserstack toolbar toggle"
+  },
+  "author": "Abhi Singh",
+  "icons": {
+    "16": "/images/browserstack_16.png",
+    "24": "/images/browserstack_24.png",
+    "32": "/images/browserstack_32.png",
+    "48": "/images/browserstack_48.png",
+    "128": "/images/browserstack_128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://live.browserstack.com/**",
+    "https://app-live.browserstack.com/**"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
