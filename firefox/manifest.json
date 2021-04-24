@@ -1,0 +1,26 @@
+{
+  "name": "BrowserStack Toolbar Toggle",
+  "version": "0.1",
+  "description": "Toggles the toolbar in Browserstack Live and App-Live",
+  "manifest_version": 2,
+  "homepage_url": "https://github.com/abhi2810/browserstack-toolbar-toggle",
+  "icons": {
+    "16": "/images/browserstack_16.png",
+    "24": "/images/browserstack_24.png",
+    "32": "/images/browserstack_32.png",
+    "48": "/images/browserstack_48.png",
+    "128": "/images/browserstack_128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "/images/browserstack_32.png",
+    "default_title": "BrowserStack Toolbar Toggle"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
